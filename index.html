@@ -2,15 +2,48 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta http-equiv="refresh" content="0; url=https://ooopenlab.cc/preview/4sywJt4kaI2kZLEOC1xh">
+<title>請使用瀏覽器開啟</title>
 <script>
-window.location.replace("https://ooopenlab.cc/preview/4sywJt4kaI2kZLEOC1xh");
+var target = "https://ooopenlab.cc/preview/4sywJt4kaI2kZLEOC1xh"; // 改成你的活動網址
+
+function isLine() {
+  return navigator.userAgent.includes("Line");
+}
+
+window.onload = function() {
+  if (!isLine()) {
+    window.location.href = target;
+  }
+}
 </script>
-<title>正在為您開啟報名頁面...</title>
+<style>
+body{
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align:center;
+  padding:40px;
+}
+.button{
+  display:inline-block;
+  margin-top:20px;
+  padding:15px 25px;
+  background:#007aff;
+  color:white;
+  border-radius:10px;
+  text-decoration:none;
+  font-size:18px;
+}
+</style>
 </head>
 <body>
-<p>正在為您開啟報名頁面...</p>
-<p>若未自動跳轉，請點擊下方連結：</p>
-<a href="https://ooopenlab.cc/preview/4sywJt4kaI2kZLEOC1xh">點此進入活動頁面</a>
+
+<h2>請使用 Safari 開啟活動頁面</h2>
+
+<p>因 LINE 內建瀏覽器無法正常顯示報名頁</p>
+
+<p><strong>請點擊右上角「⋯」</strong><br>
+選擇「在 Safari 開啟」</p>
+
+<a class="button" href="https://ooopenlab.cc/preview/4sywJt4kaI2kZLEOC1xh">或點我直接前往</a>
+
 </body>
 </html>
